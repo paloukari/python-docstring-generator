@@ -4,7 +4,7 @@ COPY ./keys/id_rsa.pub /tmp/tmp.pub
 
 RUN mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat /tmp/tmp.pub >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys && rm -f /tmp/tmp.pub
 
-RUN apt update && apt install Y openssh-server
+RUN apt-get update && apt-get --yes install  openssh-server
 
 WORKDIR /src
 
