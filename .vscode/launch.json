@@ -10,6 +10,20 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Scrape GitHub",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/pycodesuggest/github-scraper/scraper.py",
+            "console": "integratedTerminal", 
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "-m", "new", 
+                "-o","./.repos", 
+                "-d","./.repos/repos.pickle", 
+                "-u","paloukari", 
+            ]
         }
     ]
 }
