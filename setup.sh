@@ -12,7 +12,18 @@ git clone https://github.com/paloukari/python-docstring-generator
 cd /data/python-docstring-generator/
 
 # Build the container
-docker build -t dev -f Dockerfile.dev .
+docker build \
+    -t dev \
+    -f Dockerfile.dev .
 
 # Run the container
-docker run --rm --runtime=nvidia --name dev -ti --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 -v ~/python-docstring-generator:/src -p 32001:22 dev
+docker run \
+    --rm \
+    --runtime=nvidia \
+     --name dev \
+     -ti \
+     --shm-size=1g \
+     --ulimit memlock=-1 \
+     --ulimit stack=67108864 \
+     -v /data/python-docstring-generator:/src \
+     -p 32001:22 dev
