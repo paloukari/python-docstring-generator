@@ -9,6 +9,7 @@ RUN apt-get update && apt-get --yes install  openssh-server
 RUN git config --global user.email "paloukari@hotmail.com"
 RUN git config --global user.name "paloukari"
 
-WORKDIR /src
+ENV LC_ALL=C.UTF-8
+ENV LANG=C.UTF-8
 
 ENTRYPOINT service ssh restart && bash

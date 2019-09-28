@@ -19,10 +19,8 @@
             "console": "integratedTerminal", 
             "cwd": "${workspaceFolder}",
             "args": [
-                "-m", "new", 
-                "-o","./.repos", 
-                "-d","./.repos/repos.pickle", 
-                "-u","paloukari", 
+                "-u","paloukari",
+                "-n","1",
             ]
         }
     ]
