@@ -1,0 +1,6 @@
+[submodule "code-docstring-corpus"]
+	path = code-docstring-corpus
+	url = https://github.com/EdinburghNLP/code-docstring-corpus
+[submodule "structured-neural-summarization"]
+	path = structured-neural-summarization
+	url = https://github.com/CoderPat/structured-neural-summarization
