@@ -8,7 +8,7 @@ mount /data
 
 # Pull the code
 cd /data
-git clone https://github.com/paloukari/python-docstring-generator
+git clone --recurse-submodules -j8 https://github.com/paloukari/python-docstring-generator
 cd /data/python-docstring-generator/
 
 # Build the container
