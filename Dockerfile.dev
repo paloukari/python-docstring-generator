@@ -6,6 +6,9 @@ RUN mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat /tmp/tmp.pub >> ~/.ssh/authorized
 
 RUN apt-get update && apt-get --yes install  openssh-server
 
+RUN git config --global user.email "paloukari@hotmail.com"
+RUN git config --global user.name "paloukari"
+
 WORKDIR /src
 
 ENTRYPOINT service ssh restart && bash
