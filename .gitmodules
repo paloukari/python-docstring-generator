@@ -1,9 +1,9 @@
 [submodule "code-docstring-corpus"]
 	path = code-docstring-corpus
-	url = https://github.com/EdinburghNLP/code-docstring-corpus
+	url = https://github.com/paloukari/code-docstring-corpus
 [submodule "structured-neural-summarization"]
 	path = structured-neural-summarization
-	url = https://github.com/CoderPat/structured-neural-summarization
+	url = https://github.com/paloukari/structured-neural-summarization
 [submodule "pycodesuggest"]
 	path = pycodesuggest
-	url = https://github.com/uclmr/pycodesuggest
+	url = https://github.com/paloukari/pycodesuggest
