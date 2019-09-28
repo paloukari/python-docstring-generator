@@ -4,3 +4,6 @@
 [submodule "structured-neural-summarization"]
 	path = structured-neural-summarization
 	url = https://github.com/CoderPat/structured-neural-summarization
+[submodule "pycodesuggest"]
+	path = pycodesuggest
+	url = https://github.com/uclmr/pycodesuggest
