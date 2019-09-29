@@ -20,8 +20,11 @@
             "cwd": "${workspaceFolder}",
             "args": [
                 "-u","paloukari",
-                "-n","1",
-            ]
+                "-n","2000",
+                "-s","'forks:<551'",
+            ], 
+            "env": {"LC_ALL":"C.UTF-8", 
+                     "LANG":"C.UTF-8"}
         }
     ]
 }
