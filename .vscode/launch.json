@@ -25,6 +25,19 @@
             ], 
             "env": {"LC_ALL":"C.UTF-8", 
                      "LANG":"C.UTF-8"}
+        },
+        {
+            "name": "Python: Normalise Scrapped Files",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/pycodesuggest/github-scraper/normalisation.py",
+            "console": "integratedTerminal", 
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--path=./.repos/",
+            ], 
+            "env": {"LC_ALL":"C.UTF-8", 
+                     "LANG":"C.UTF-8"}
         }
     ]
 }
