@@ -73,7 +73,7 @@
             "args": [
                 "--input=./.data/corpus.functions.pickle",
                 "--output=./.data/graphs.functions.pickle",
-                // "--singlethreaded",
+                "--singlethreaded",
             ],
             "env": {
                 "LC_ALL": "C.UTF-8",
