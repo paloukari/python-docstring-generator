@@ -1,6 +1,5 @@
 # Project specific
-/.repos
-/.repos_normalised
+/.data
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

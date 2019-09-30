@@ -16,28 +16,69 @@
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/pycodesuggest/github-scraper/scraper.py",
-            "console": "integratedTerminal", 
+            "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
             "args": [
-                "-u","paloukari",
-                "-n","2000",
-                "-s","'forks:<551'",
-            ], 
-            "env": {"LC_ALL":"C.UTF-8", 
-                     "LANG":"C.UTF-8"}
+                "-u",
+                "paloukari",
+                "-n",
+                "2000",
+                "-s",
+                "'forks:<551'",
+            ],
+            "env": {
+                "LC_ALL": "C.UTF-8",
+                "LANG": "C.UTF-8"
+            }
         },
         {
             "name": "Python: Normalise Scrapped Files",
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/pycodesuggest/github-scraper/normalisation.py",
-            "console": "integratedTerminal", 
+            "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
             "args": [
-                "--path=./.repos/",
-            ], 
-            "env": {"LC_ALL":"C.UTF-8", 
-                     "LANG":"C.UTF-8"}
+                "--path=./.data/repos/",
+            ],
+            "env": {
+                "LC_ALL": "C.UTF-8",
+                "LANG": "C.UTF-8"
+            }
+        },
+        {
+            "name": "Python: Generate Corpus",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/generate-corpus.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--output=./.data/corpus.functions.pickle",
+                "--singlethreaded",
+                // "--methods",
+            ],
+            "env": {
+                "LC_ALL": "C.UTF-8",
+                "LANG": "C.UTF-8"
+            }
+        },
+        {
+            "name": "Python: Generate Graphs",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/generate-graphs.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--input=./.data/corpus.functions.pickle",
+                "--output=./.data/graphs.functions.pickle",
+                // "--singlethreaded",
+            ],
+            "env": {
+                "LC_ALL": "C.UTF-8",
+                "LANG": "C.UTF-8"
+            }
         }
     ]
 }
